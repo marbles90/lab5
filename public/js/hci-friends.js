@@ -5,12 +5,25 @@ $(document).ready(function() {
 	initializePage();
 })
 
+
 /*
  * Function that is called when the document is ready.
  */
 function initializePage() {
+	
+	/*when click on name*/
+	$(".names").click(function(e) {/* add fucnt(e) para ke no haga reload the page*/
+		e.preventDefault();
+		$(this).text(anagrammedName($ (this).text() ));
+	});
 	console.log("Javascript connected!");
+	
 }
+
+
+
+
+
 
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!

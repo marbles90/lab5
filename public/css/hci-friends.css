@@ -12,3 +12,26 @@
 h1, h2, h3, h4, h5 {
 	color: #8382BF;
 }
+div {
+	width: 500px;
+	
+    background-color: #deebf7;
+    padding: 20px;
+    
+    display: inline-block;
+}
+img {
+	border-radius:60px;
+	width: 300px;
+	height: 230px;
+	vertical-align: middle;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+form {
+	text-align: center;
+}
+body {
+    margin: 0 90px;
+}

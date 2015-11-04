@@ -23,20 +23,10 @@
 
 <body>
 	<h1>My HCI Friends</h1><br />
-	<form id="addFriendForm" role="form" method="get" action="/add">
-		<h2>Add a friend</h2>
-	    <div class="form-group">
-	      <label for="name">Name:</label>
-	      <input type="text" class="form-control" id="name" placeholder="Name" name="name">
-	    </div>
-	    <div class="form-group">
-	      <label for="description">Description:</label>
-	      <input type="text" class="form-control" id="description" placeholder="Description" name="description">
-	    </div><br />
-	    <input onclick="myFunct()"
-type="submit" id="submitBtn" class="btn btn-default" value="Add the friend"></input>
-	</form><p>&nbsp;</p>
-	
+
+	<button><a href="/">Back</a></button>
+
+	<br />
 	{{#each friends}}
 	<div>
 		<img src="{{imageURL}}"/>
@@ -46,11 +36,24 @@ type="submit" id="submitBtn" class="btn btn-default" value="Add the friend"></in
 	</div>
 	{{/each}}
 
+	<!--<form id="addFriendForm" role="form" method="get" action="/add">
+		<h2>Add a friend</h2>
+	    <div class="form-group">
+	      <label for="name">Name:</label>
+	      <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+	    </div>
+	    <div class="form-group">
+	      <label for="description">Description:</label>
+	      <input type="text" class="form-control" id="description" placeholder="Description" name="description">
+	    </div>
+	    <input  onclick="myFunct()" type="submit" id="submitBtn" class="btn btn-default" value="Add the friend"></input>
+	</form>
 	
 	<script>
 function myFunct() {
     alert("You have a new friend!");
 }
-</script>
+</script>-->
+	
 </body>
 </html>
